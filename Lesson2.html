@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 1. Дан код:
+    // var a = 1, b = 1, c, d;
+    // c = ++a; alert(c);           // 2 -> преинкремент (а+1)
+    // d = b++; alert(d);           // 1 -> сначала возврат (b) потом инкремент
+    // c = (2+ ++a); alert(c);      // 5 -> (a) была проинкрементирована на 15-й стр + инкремент
+    // d = (2+ b++); alert(d);      // 4 -> (b) была проинкрементирована на 16-й
+    // alert(a);                    // 3 -> 1+1+1
+    // alert(b);                    // 3 -> 1+1+1
+
+     // 2. Чему будет равен x в примере ниже?
+    // var a = 2;
+    // var x = 1 + (a *= 2); // 2*2+1=5
+
+    // 3. Объявить две целочисленные переменные...
+    // let a = -1;
+    // let b = 42;
+
+    // if (a>=0 && b>=0) {
+    //     console.log(a-b);
+    // } else if (a<0 && b<0) {
+    //     console.log(a*b);
+    // } else  console.log(a+b);
+
+    //4. Присвоить переменной а...
+    // let a = 17;
+    // switch (a) {
+    //     case 1:
+    //     console.log('1');
+    //     case 2:
+    //     console.log('2');
+    //     case 3:
+    //     console.log('3');
+    //     case 4:
+    //     console.log('4');
+    //     case 5:
+    //     console.log('5');
+    //     case 6:
+    //     console.log('6');
+    //     case 7:
+    //     console.log('7');
+    //     case 8:
+    //     console.log('8');
+    //     case 9:
+    //     console.log('9');
+    //     case 10:
+    //     console.log('10');
+    //     case 11:
+    //     console.log('11');
+    //     case 12:
+    //     console.log('12');
+    //     case 13:
+    //     console.log('13');
+    //     case 14:
+    //     console.log('14');
+    //     case 15:
+    //     console.log('15');
+    // }
+
+    //5. Реализовать основные 4
+        // let a = 2;
+        // let b = 3;
+
+        // console.log(summ(a, b), subtr(a, b), diff(a, b), division(a, b));
+        
+        // function summ (arg1, arg2) {
+        //     return arg1 + "+" + arg2 + "=" + (arg1 + arg2) ;
+        // }
+        // function subtr (arg1, arg2) {
+        //     return arg1 + "-" + arg2 + "=" + (arg1 - arg2) ;
+        // }
+        // function diff (arg1, arg2) {
+        //     return arg1 + "*" + arg2 + "=" + (arg1 * arg2) ;
+        // }
+        // function division (arg1, arg2) {
+        //     return arg1 + "/" + arg2 + "=" + (arg1 / arg2) ;
+        // }
+
+    //   6. Реализовать функцию с тремя
+    // let a = 2;
+    // let b = 3;
+    // let operStr = prompt('Введите название желаемой арифметической операции на русском языке - (сложение, вычитание, умножение, деление)');
+        
+    // console.log(mathOperation(a, b, operStr));
+    
+    // function mathOperation(arg1, arg2, operation) {
+    //     switch (operation) {
+    //         case 'сложение':
+    //             return arg1+arg2
+    //             break;
+    //         case 'вычитание':
+    //             return arg1-arg2
+    //             break;
+    //         case 'умножение':
+    //             return arg1*arg2
+    //             break;
+    //         case 'деление':
+    //             return arg1/arg2
+    //             break;
+        
+    //         default:
+    //             return 'Ничего не вышло - дико извиняюсь.'
+    //             break;
+    //     }
+    // }
+
+    // 7) *Сравнить null и 0
+    // console.log(null == 0, null === 0) //null == 0 / false - т.к. исключительный случай
+    // null === 0 / false - т.к. {object} !== {number}
+
+    // 8) *С помощью рекурсии организовать функцию
+    let v = 2;
+    let p = 42;
+    console.log(power(v, p));       
+    function power(val, pow) {
+        if (pow == 1) {
+        return val;
+        } else {
+        return val * power(val, pow - 1);
+        }
+    }
+</script>
+</html>
